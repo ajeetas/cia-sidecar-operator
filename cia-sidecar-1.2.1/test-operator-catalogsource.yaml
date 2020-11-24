@@ -1,0 +1,13 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: my-test-operators-sdecar
+  namespace: openshift-marketplace
+spec:
+  sourceType: grpc
+  image: quay.io/ajeetas/cia-sidecar-index:v1.2.4
+  displayName: Test Operators
+  publisher: Red Hat Partner
+  updateStrategy:
+    registryPoll:
+      interval: 5m
