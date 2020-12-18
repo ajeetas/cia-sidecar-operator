@@ -1,0 +1,8 @@
+domain: citrix.com
+layout: helm.sdk.operatorframework.io/v1
+projectName: citrix-adc-cpx-istio-sidecar-injector-operator
+resources:
+- group: citrix
+  kind: Citrix-adc-cpx-istio-sidecar-injector-operator
+  version: v1alpha1
+version: 3-alpha
